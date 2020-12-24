@@ -1,0 +1,41 @@
+.__jd_loader {
+  &-glow--wrapper {
+    display: flex;
+
+    &__dots {
+      height: 10px;
+      width: 10px;
+      background-color: $color-primary;
+      border-radius: 50%;
+      margin: 0 5px;
+      animation: animate 1.2s linear infinite;
+
+      @keyframes animate {
+        0%,
+        20%,
+        60%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(2);
+        }
+      }
+    }
+    .a {
+      animation-delay: 0.2s;
+    }
+    .b {
+      animation-delay: 0.4s;
+    }
+    .c {
+      animation-delay: 0.6s;
+    }
+    .d {
+      animation-delay: 0.8s;
+    }
+    .e {
+      animation-delay: 1s;
+    }
+  }
+}

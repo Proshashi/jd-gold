@@ -1,0 +1,25 @@
+.__jd_main-imports {
+  &--form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 5rem;
+
+    &__item {
+      .error {
+        color: red;
+        margin: 0 1rem;
+        position: relative;
+
+        &::after {
+          content: "*";
+          position: absolute;
+          top: -0.5rem;
+          left: -1rem;
+          font-size: 2rem;
+          color: red;
+        }
+      }
+    }
+  }
+}

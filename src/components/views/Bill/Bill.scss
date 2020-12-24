@@ -1,0 +1,126 @@
+.__jd_main-bill {
+  &--layout {
+    width: 80rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    position: relative;
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__number {
+      text-align: right;
+    }
+
+    &__phones {
+      text-align: right;
+
+      .item {
+        margin-left: auto;
+        display: inline-flex;
+        align-items: center;
+      }
+
+      &_icon {
+        transform: rotateY(180deg);
+        margin-right: 1.5rem;
+      }
+    }
+
+    &__shopLogo {
+      img {
+        height: 15rem;
+        width: 15rem;
+      }
+    }
+
+    &__shopInfo {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      // align-items: flex-end;
+
+      &_addresses {
+        text-align: right;
+        .name {
+          font-size: 2rem;
+          text-align: right;
+          font-weight: bold;
+        }
+      }
+    }
+
+    &__date {
+      text-align: right;
+    }
+
+    &__table {
+      table,
+      th,
+      td {
+        border: 1px solid $color-placeholder;
+      }
+      th,
+      td {
+        padding: 0.5rem;
+      }
+      table {
+        margin: 1rem 0;
+        thead {
+          th {
+            width: 100px;
+          }
+        }
+      }
+      footer {
+        div {
+          text-align: right;
+          span {
+            display: inline-block;
+            width: 100px;
+            text-align: left;
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+
+    &__footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &_item {
+        margin-top: 5rem;
+        position: relative;
+        min-width: 15rem;
+        border-top: 0.2rem solid #ccc;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.second {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.__jd_removeForm {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  &-icon {
+    color: red;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.5s color ease-in-out;
+
+    &:hover {
+      color: rgb(138, 73, 73);
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.__jd_main-workerStock {
+  &--form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &--detail {
+    &__table_action {
+      color: blue;
+      font-size: 14px;
+
+      &:hover {
+        color: #4eabc7;
+      }
+    }
+  }
+}
+
+._jd_main-workerStock--detail__modal {
+  display: flex;
+  flex-direction: column;
+  width: 60vw !important;
+
+  .ant-modal-content {
+    height: fit-content !important;
+    padding-bottom: 2rem;
+  }
+
+  h1 {
+    color: $color-primary;
+  }
+
+  &_info {
+    div {
+      margin-right: 2rem;
+      font-size: 1.5rem !important;
+      display: flex;
+      align-items: center;
+      color: rgb(121, 110, 110);
+
+      .title {
+        width: 13rem;
+        font-weight: bold;
+      }
+    }
+    margin-bottom: 2rem;
+  }
+}

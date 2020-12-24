@@ -1,0 +1,37 @@
+.__jd_main {
+  &-items {
+    &--form {
+      display: flex;
+      align-items: center;
+      // justify-content: space-between;
+
+      .__jd_input-regular {
+        border: 1px solid #736363;
+        width: 100%;
+      }
+
+      &__add {
+        .__jd_input-select {
+          border: none !important;
+          border-bottom: 1px solid $color-primary !important;
+          padding-left: 0;
+          overflow: hidden !important;
+          color: $color-primary;
+          font-size: 1.5rem;
+          font-weight: 300 !important;
+
+          &--error {
+            margin-top: -1rem;
+          }
+        }
+      }
+    }
+
+    &--tables {
+      table {
+        border-top: 1rem #ccc solid !important;
+        background-color: #736363;
+      }
+    }
+  }
+}

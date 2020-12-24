@@ -1,0 +1,15 @@
+.__jd_main-cashbook {
+  &--filter {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+  }
+
+  &--add {
+    &__form {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}

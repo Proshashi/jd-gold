@@ -1,0 +1,47 @@
+.__jd_main-goldStock {
+  &--list {
+    display: flex;
+    &__item {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      //   background-image: $gradient-primary;
+      //   background-image: -webkit-linear-gradient(top, #C0C0C0 0%, #B1B1B1 100%);;
+      padding: 2rem;
+      width: fit-content;
+      border-radius: 1rem;
+      margin: 2rem;
+      justify-content: space-between;
+
+      &_detail {
+        &-name {
+          color: $color-primary;
+          font-size: 3rem;
+          font-weight: bold;
+        }
+
+        &-amount {
+          font-size: 1.8rem;
+        }
+      }
+
+      &_icon {
+        margin-left: 2rem;
+        img {
+          height: 8rem;
+        }
+      }
+    }
+  }
+
+  &--detail {
+    &__title {
+      font-size: 3rem;
+      font-weight: bold;
+      margin: 2rem 0;
+      &_name {
+        text-transform: capitalize;
+      }
+    }
+  }
+}

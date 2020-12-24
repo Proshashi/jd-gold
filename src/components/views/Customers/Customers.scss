@@ -1,0 +1,72 @@
+.__jd_main-customers {
+  &--cards {
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+      margin: 2rem 0;
+      &_name {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: $color-primary;
+        cursor: pointer;
+        display: inline-block;
+
+        &:hover {
+          color: $color-secondary;
+        }
+      }
+    }
+  }
+
+  &--form {
+    display: flex;
+    align-items: center;
+  }
+
+  &--detail {
+    &__info {
+      display: flex;
+      align-items: flex-start;
+      &_data {
+        margin-left: auto;
+        text-align: right;
+        &-item {
+          margin: 0 2rem;
+          font-size: 2rem;
+          color: $color-secondary;
+
+          &--edit {
+            cursor: pointer;
+            transition: opacity ease-in-out 0.15s;
+            font-size: 1.5rem;
+            color: blue;
+
+            &:hover {
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+    }
+  }
+  &--edit {
+    &__form {
+      &_addPhoneButton {
+        padding: 0.5rem 1rem;
+        text-align: center;
+        border: $color-placeholder dashed 0.1rem;
+        color: $color-secondary;
+        margin: 2rem 1rem;
+        width: 20vw;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: box-shadow ease-in-out 0.15s;
+
+        &:hover {
+          box-shadow: 0.1rem 0.1rem 1rem #ccc;
+        }
+      }
+    }
+  }
+}

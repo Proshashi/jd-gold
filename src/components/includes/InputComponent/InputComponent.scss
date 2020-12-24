@@ -1,0 +1,146 @@
+.__jd_input {
+  &-regular {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid #222537;
+    padding: 5px 10px;
+    margin: 10px 10px 10px 0;
+    width: 30vw;
+
+    &--icon {
+      margin-right: 10px;
+      margin-top: -2px;
+    }
+
+    &--input {
+      border: 0;
+      outline: none;
+      font-size: 18px;
+      color: #476f8b;
+      width: 100%;
+    }
+  }
+
+  &-withLabel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 2px solid #222537;
+    padding: 5px 10px 5px 5px;
+    margin: 0 10px 10px 0;
+    width: 20vw;
+
+    &--input {
+      border: 0;
+      outline: none;
+      font-size: 1.5rem;
+      width: 100%;
+      color: $color-primary;
+
+      &::placeholder {
+        color: $color-placeholder;
+      }
+    }
+  }
+
+  &-withUnit {
+    &--input {
+      border: 2px solid #222537 !important;
+      margin: 10px 10px 10px 0 !important;
+      width: 30vw;
+      border: 0 !important;
+      outline: none;
+
+      width: 100%;
+
+      input {
+        font-size: 18px !important;
+        color: #476f8b;
+        border: 1px solid #736363 !important;
+        border-right-style: 1px solid $color-placeholder !important;
+      }
+
+      &:focus {
+        border: none !important;
+        box-shadow: none !important;
+      }
+
+      .ant-input-group-addon {
+        border: 1px #736363 solid;
+        outline: none;
+        box-shadow: none !important;
+        border-left-style: none;
+      }
+
+      &__select {
+        width: 10rem;
+        border: none !important;
+        background-color: #fff;
+      }
+    }
+  }
+
+  &-search {
+    border-bottom: 0.1rem #9ca5ac solid;
+    min-width: 250px;
+    width: 250px;
+    margin: 20px 10px 20px 0;
+
+    input {
+      font-size: 1.8rem;
+      outline: none;
+      border: none;
+      width: 100%;
+
+      &::placeholder {
+        color: #9ca5ac;
+      }
+    }
+  }
+
+  &-select {
+    width: 30vw;
+    font-size: 1.8rem;
+    margin: 10px 10px 10px 0;
+
+    div {
+      border: none !important;
+      border-radius: 0 !important;
+      height: fit-content !important;
+      padding: 4px 10px !important;
+      line-height: 40px !important;
+    }
+
+    > div > span input {
+      color: #476f8b !important;
+
+      &::placeholder {
+        color: $color-placeholder;
+      }
+    }
+  }
+
+  &-autocomplete {
+    width: 20vw;
+    font-size: 1.8rem;
+    margin: 10px 10px 10px 0;
+
+    div {
+      border: none !important;
+      border-radius: 0 !important;
+      height: fit-content !important;
+      padding: 4px 10px !important;
+      line-height: 40px !important;
+    }
+
+    > div > span input {
+      color: #476f8b !important;
+      text-transform: capitalize;
+
+      &::placeholder {
+        color: $color-placeholder;
+      }
+    }
+  }
+}

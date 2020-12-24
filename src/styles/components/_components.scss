@@ -1,0 +1,22 @@
+@import "../../components/App.scss";
+
+@import "../../components/includes/Button/Button.scss";
+@import "../../components/includes/Loaders/Loaders.scss";
+@import "../../components/includes/Texts/Texts.scss";
+@import "../../components/includes/InputComponent/InputComponent.scss";
+@import "../../components/includes/Table/Table.scss";
+
+@import "../../components/views/Auth/Auth.scss";
+@import "../../components/views/Sidebar/Sidebar.scss";
+@import "../../components/views/Dashboard/Dashboard.scss";
+@import "../../components/views/Items/Items.scss";
+@import "../../components/views/Customers/Customers.scss";
+@import "../../components/views/Imports/Imports.scss";
+@import "../../components/views/Sales/Sales.scss";
+@import "../../components/views/WorkerStock/WorkerStock.scss";
+@import "../../components/views/WorkerWage/WorkerWage.scss";
+@import "../../components/views/GoldStock/GoldStock.scss";
+@import "../../components/views/DailyExpanses/DailyExpanses.scss";
+@import "../../components/views/Bill/Bill.scss";
+@import "../../components/views/CashBook/CashBook.scss";
+@import "../../components/views/DayBook/DayBook.scss";

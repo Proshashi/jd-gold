@@ -1,0 +1,81 @@
+.ant-table-content {
+  border-radius: 0 !important;
+
+  table {
+    border-radius: 0 !important;
+    // overflow: hidden !important;
+
+    outline: 1px $color-primary solid;
+
+    thead {
+      tr {
+        border: 5px solid #ccc !important;
+        line-height: 2rem;
+        white-space: wrap;
+
+        th {
+          background-color: $color-primary !important;
+          color: #fff !important;
+          border-radius: 0 !important;
+          font-size: 2rem;
+        }
+      }
+    }
+
+    tfoot {
+      tr {
+        td {
+          border-top: 1px $color-primary solid;
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+.ant-table-tbody > tr > td {
+  border-bottom: 1px $color-primary solid;
+  transition: all 0.25s ease-in-out;
+}
+
+.ant-table-tbody > tr:last-child > td {
+  border-bottom: 0 $color-primary solid;
+}
+
+.ant-table-tbody {
+  // overflow: hidden !important;
+}
+
+.ant-table-footer {
+  outline: 1px $color-primary solid;
+  border-radius: 0 !important;
+  width: 100% !important;
+  line-height: 1rem;
+  background-color: #fff;
+}
+
+.__jd {
+  &_table {
+    &-row {
+      cursor: pointer;
+      color: #222537 !important;
+      font-size: 1.6rem;
+      line-height: 1.5rem !important;
+
+      &:hover td {
+        background-color: #fafafa !important;
+      }
+
+      td {
+        background-color: #fff !important;
+      }
+    }
+  }
+}
+
+.__jd_table-rowOverflow {
+  max-width: 100px !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+}

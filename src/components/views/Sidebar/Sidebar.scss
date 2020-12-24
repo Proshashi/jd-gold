@@ -1,0 +1,121 @@
+.__jd_sidebar {
+  min-height: 100vh;
+  background-color: #222537;
+  width: $sidebar-width;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: scroll !important;
+  overflow-x: hidden !important;
+  transition: 0.5s ease-in-out all !important;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &-collapse {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    background-color: #363841;
+    cursor: pointer;
+    justify-self: flex-end !important;
+
+    &--icon {
+      transform: rotateY(0);
+      transition: all ease-in-out 0.25s;
+    }
+  }
+
+  &-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &--logo {
+      img {
+        height: 15rem;
+        width: 15rem;
+        object-fit: contain;
+        transition: all ease-in-out 0.5s !important;
+      }
+    }
+
+    &--date {
+      font-size: 1.7rem;
+      color: #ffffff;
+      transition: linear 0.25s all;
+      white-space: nowrap;
+    }
+
+    &--unit {
+      margin: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .ant-select-selector {
+        background-color: $color-gold !important;
+        color: $color-primary !important;
+        border: none !important;
+      }
+    }
+  }
+
+  &-menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+
+    &--item {
+      color: #fff;
+      font-size: 2rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0.5rem 2rem;
+      flex-wrap: nowrap;
+
+      &__active {
+        background-image: $gradient-primary;
+        color: $color-primary;
+
+        div svg path {
+          fill: $color-primary;
+        }
+      }
+
+      &:hover {
+        color: $color-primary !important;
+        background-image: $gradient-primary !important;
+      }
+
+      &:hover div svg path {
+        fill: $color-primary;
+      }
+
+      &__title {
+        width: 100%;
+        max-width: 100%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        transition: linear 0.25s opacity;
+        overflow: hidden;
+      }
+
+      &__icon {
+        width: 6rem;
+
+        svg {
+          height: 2rem;
+          width: 2rem;
+        }
+        svg path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+}

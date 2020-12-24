@@ -1,0 +1,32 @@
+.__jd_main-sales {
+  &--new {
+    &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      &_item {
+        .error {
+          color: red;
+          margin: 0 2rem;
+          position: relative;
+
+          &::after {
+            content: "*";
+            position: absolute;
+            top: -0.5rem;
+            left: -1rem;
+            font-size: 2rem;
+            color: red;
+          }
+        }
+      }
+    }
+  }
+
+  &--modal {
+    .ant-modal-content {
+      padding: 2rem 5rem;
+    }
+  }
+}
